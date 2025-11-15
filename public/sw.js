@@ -7,8 +7,8 @@ const pages = [
   "/docs/table/",
   "/tags/",
   "/book.min.6970156cec683193d93c9c4edaf0d56574e4361df2e0c1be4f697ae81c3ba55f.css",
-  "/en.search-data.min.4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json",
-  "/en.search.min.01e06485cbfd6fea743ffc3cf16bf807a385fbc0cd9e5c846259fd1d173a78e4.js",
+  "/en.search-data.min.752c9bab4b416ff8e9676562bf0ef56e79aa0c334f87057723c0076c355d6197.json",
+  "/en.search.min.36e80dc18afe3c986bf90ad888a11bb0d52a84352c40c5d4b17922fd41049b28.js",
   
 ];
 

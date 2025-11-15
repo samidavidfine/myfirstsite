@@ -51,7 +51,7 @@ menu:
   # before: []
   after:
     - name: "Github"
-      url: "https://github.com/alex-shpak/hugo-book"
+      url: "https://github.com/samidavidfine/myfirstsite"
       weight: 10
     - name: "Hugo Themes"
       url: "https://themes.gohugo.io/themes/hugo-book/"
