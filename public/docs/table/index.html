@@ -17,7 +17,7 @@
   <script>
     $(document).ready(function() {
       $.ajax({
-        url: "/data.csv",
+        url: "https://raw.githubusercontent.com/samidavidfine/myfirstsite/refs/heads/master/static/data.csv?token=GHSAT0AAAAAADOGHEAHR7UN6GN5B6ZJ7DUI2IXZBMA",
         dataType: "text",
       }).done(function(data) {
         const lines = data.split("\n");
