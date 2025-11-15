@@ -1,14 +1,14 @@
 const cacheName = self.location.pathname
 const pages = [
 
-  "/docs/myfirst/",
+  "/categories/",
   "/docs/",
   "/",
-  "/categories/",
+  "/docs/table/",
   "/tags/",
   "/book.min.6970156cec683193d93c9c4edaf0d56574e4361df2e0c1be4f697ae81c3ba55f.css",
-  "/en.search-data.min.e3c66a5df76f7324583cad1933070f44fd5e478dabb50a807f9db483d64783f8.json",
-  "/en.search.min.7d2a6d6e5f4db68147e5bad8bd3e5970f0e3fd7dd812c3193c06c937778e5796.js",
+  "/en.search-data.min.4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json",
+  "/en.search.min.01e06485cbfd6fea743ffc3cf16bf807a385fbc0cd9e5c846259fd1d173a78e4.js",
   
 ];
 

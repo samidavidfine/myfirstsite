@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>User Information</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+  <h1>Table</h1>
+  <table id="csvTable" class="display" style="width:100%">
+    <thead></thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    $(document).ready(function() {
+      $.ajax({
+        url: "/data.csv",
+        dataType: "text",
+      }).done(function(data) {
+        const lines = data.split("\n");
+        const headers = lines[0].split(",");
+        const tbody = lines.slice(1);
+
+        // Build table header
+        let theadHTML = "<tr>";
+        headers.forEach(h => theadHTML += `<th>${h.trim()}</th>`);
+        theadHTML += "</tr>";
+        $("#csvTable thead").html(theadHTML);
+
+        // Build table body
+        let tbodyHTML = "";
+        tbody.forEach(row => {
+          const cells = row.split(",");
+          if (cells.length === headers.length) {
+            tbodyHTML += "<tr>";
+            cells.forEach(c => tbodyHTML += `<td>${c.trim()}</td>`);
+            tbodyHTML += "</tr>";
+          }
+        });
+        $("#csvTable tbody").html(tbodyHTML);
+
+        // Initialize DataTable
+        $("#csvTable").DataTable();
+      });
+    });
+  </script>
+</body>
+</html>
